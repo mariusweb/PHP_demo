@@ -69,11 +69,11 @@ function testForm($questionsArr, $cookieArray, $connectionDb) {
             if (isset($_POST["testas" . $key . ""])) {
                 echo "<br><label for='radio'>$onlyQuestionsArr[$key]</label><br>"
                 . "<br><label for='radio'>$questionsArr[$question]</label><br>"
-                . "<input type='radio' name='radio' value='1' required>Radio 1<br>"
-                . "<input type='radio' name='radio' value='2'>Radio 2<br>"
-                . "<input type='radio' name='radio' value='3'>Radio 3<br>"
-                . "<input type='radio' name='radio' value='4'>Radio 4<br>"
-                . "<input type='radio' name='radio' value='5'>Radio 5<br>";
+                . "<input type='radio' name='radio' value='1' required> 1<br>"
+                . "<input type='radio' name='radio' value='2'> 2<br>"
+                . "<input type='radio' name='radio' value='3'> 3<br>"
+                . "<input type='radio' name='radio' value='4'> 4<br>"
+                . "<input type='radio' name='radio' value='5'> 5<br>";
                 echo "<input type='submit' name='radioSubmit' value='Pateikti'>";
                 $next = intval($key) + 1;
                 echo "<input type='hidden' name='testas" . $next . "' value='testas" . $next . "'>";
